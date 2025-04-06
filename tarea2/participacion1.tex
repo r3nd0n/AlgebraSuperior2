@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{venndiagram}
+\usepackage{venndiagram}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage[margin=1cm, top=1.5cm, bottom=1.5cm]{geometry}
+
+\tcbuselibrary{breakable}
+
+\title{\textbf{Algebra Superior II: Tarea 02}}
+\author{Rendón Ávila Jesús Mateo}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\vspace{2cm}
+\includegraphics[width=0.19\textwidth]{Escudo.png}
+\hspace{0.5cm}
+\includegraphics[width=0.2\textwidth]{logo_ciencias.png}
+\end{center}
+\begin{center}
+    \vspace{1cm}
+    Facultad de Ciencias\\
+    Universidad Nacional Autónoma de México\\
+    \vspace{3cm}
+    Profesor: Dr. Gerardo Miguel Tecpa Galván\\
+\end{center}
+
+\newpage
+
+%
+% Ejercicio 1
+%
+\textbf{1.} Sean $a$ un número par y $b$ un número impar. Muestra que $mcd(a, b)$ es impar.
+
+\vspace{1cm}
+
+%
+% Ejercicio 2
+%
+\textbf{2.} Un grupo de 23 viajeros llega a un campamento y encuentra 63 montones de sacos, cada montón con
+el mismo número de sacos, y un montón adicional con 7 sacos (en total hay 64 montones). Si sabemos que
+los viajeros no podían cargar con más de 50 sacos cada uno y pudieron repartírselos por igual y sin abrirlos,
+¿cuántos sacos había en cada uno de los montones?
+
+\vspace{1cm}
+
+%
+% Ejercicio 3
+%
+\textbf{3.} Demuestra que si $a$ y $b$ son enteros no nulos, entonces $mcd(a, b) |mcm(a, b)$.
+
+\vspace{1cm}
+
+%
+% Ejercicio 4
+%
+\textbf{4.} Muestra que si $p$ y $q$ son dos primos distintos, entonces para todo $a, b \in \mathbb{Z}^+$ se cumple que 
+$mcd(p^a, q^b) = 1$.
+
+\vspace{1cm}
+
+%
+% Ejercicio 5
+%
+\textbf{5.} Sean $a_1, \dots, a_n \in \mathbb{Z}$ una colección de enteros Muestra que si para todo $i, j \in \{1, . . . , k \}$ 
+con $i \neq j$ se satisface que $mcd(a_i, a_j ) = 1$, entonces $mcd(a_k , a_1  \cdot a_2 \cdots a_{k-1}) = 1$.
+
+\vspace{1cm}
+
+%
+% Ejercicio 6
+%
+\textbf{6.} Sean $a_1, \dots, a_n, b \in \mathbb{Z}$ una colección de enteros tales que para todo $i, j \in \{1, \dots, k\}$ con $i \neq j$
+se satisface que $mcd(a_i, a_j ) = 1$. Muestra por inducción que si para todo $i \in \{1, \dots, k \}$ se cumple que $a_i |b$, entonces
+$a_1 \cdot a2 \cdots a_k |b$.
+\vspace{1cm}
+
+%
+% ejercicio 7
+%
+\textbf{7.} Sea $p$ un número primo. Muestra que si $k \in \mathbb{Z}$ es tal que $k < p$, entonces $p \nmid k!$
+
+\vspace{1cm}
+
+%
+% Ejercicio 8
+%
+\textbf{8.} Sean $c \neq 0$ y $k \geq 2$. Muestra mediante inducción matemática que si $a_1, \dots, a_k$ es una colección de
+enteros no nulos, entonces $mcm(ca_1, ca_2, \dots, ca_k ) = |c|mcm(a_1, a_2, \dots, a_k )$.
+\vspace{1cm}
+
+%
+% Ejercicio 9
+%
+\textbf{9.} Sean $a, b \in \mathbb{Z}$ no ambos nulos y $c \neq 0$. Muestra que $mcd(ca, cb) = |c|$ si y sólo si $mcd(a, b) = 1$.
+
+\vspace{1cm}
+
+%
+% Ejercicio 10
+%
+\textbf{10.} Muestra que si $p$ es un número primo y $k \in \{1, \dots, p-1 \}$, entonces $p | \binom{p}{k}$.
+
+\vspace{1cm}
+%
+% Ejercicio 11
+%
+\textbf{11.} Sean $a, b, t \in \mathbb{Z}$ con $t \neq 0$. Muestra que si $mcd(k, t) = 1$ y $at \equiv bt$ mod $k$, entonces $a \equiv b$ mod $k$.
+
+\vspace{1cm}
+%
+% Ejercicio 12
+%
+\textbf{12.} Muestra que si $a \equiv b$ mod $k$, entonces $mcd(a, k) = mcd(b, k)$.
+
+\vspace{1cm}
+%
+% Ejercicio 13
+%
+\textbf{13.} Sea $k = mcd(m, n)$. Muestra que si $a \equiv b$ mod $m$ y $c \equiv d$ mod $n$, entonces $a + c \equiv b + d$ mod $k$.
+
+\vspace{1cm}
+%
+% Ejercicio 14
+%
+\textbf{14.} Sean $a, b$ y $k$ enteros tales que $a \equiv b$ mod $k$. Muestra que si $0 \leq a < k$ y $0 \leq b < k$, entonces $a = b$.
+
+\vspace{1cm}
+%
+% Ejercicio 15
+%
+\textbf{15.} Considera la ecuación diofantina $56x + 378y= k$. Calcula todos los valores de $k$ entre 100 y 200 para
+los cuales dicha ecuación tiene solución entera. Calcula la solución para el caso en que $k = 154$.
+
+\end{document}

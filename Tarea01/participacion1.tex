@@ -16,7 +16,7 @@
 
 \tcbuselibrary{breakable}
 
-\title{\textbf{Álgebra Superior I: Tarea 01}}
+\title{\textbf{Algebra Superior II: Tarea 01}}
 \author{Rendón Ávila Jesús Mateo}
 \date{\today}
 
@@ -24,16 +24,17 @@
 
 \maketitle
 \begin{center}
-\vspace{3cm}
-\includegraphics[width=0.195\textwidth]{Escudo.png}
+\vspace{2cm}
+\includegraphics[width=0.19\textwidth]{Escudo.png}
 \hspace{0.5cm}
 \includegraphics[width=0.2\textwidth]{logo_ciencias.png}
 \end{center}
 \begin{center}
     \vspace{1cm}
-    Universidad Nacional Autónoma de México\\
     Facultad de Ciencias\\
-    Profesora: Cristina Angélica Núñez Rodríguez\\
+    Universidad Nacional Autónoma de México\\
+    \vspace{3cm}
+    Profesor: Dr. Gerardo Miguel Tecpa Galván\\
 \end{center}
 
 \newpage
@@ -41,372 +42,225 @@
 %
 % Ejercicio 1
 %
-\textbf{1.} Encuentra una proposición adecuada para describir a cada uno de los siguientes conjuntos.
-\begin{enumerate}[label=\alph*)]
-    \item $A = \{30, 31, 32, ...\}$\\
-    $A = \{x \in \mathbb{N} \mid x \geq 30\}$
-    \item $B = \{-1, 2, -3, 4, -5, 6, -7, ...\}$\\
-    $B = \{x \in \mathbb{N}-\{0\} \mid \text{ si } x \mod 2 \neq 0 \Rightarrow -1(x)\}$
-    \item $C = \{-1, 3, -5, 7, -9, 11, ...\}$\\
-    $C = \{x \in \mathbb{N} - \{0\} \mid \text{ si } \}$
-    \item $D = \{4, 7, 12, 19, ...\}$\\
-    $D = \{...\}$
-\end{enumerate}
+\textbf{1.} Sea $(R, +, \ast)$ un anillo. Demostrar mediante definiciones que $R$ es conmutativo si y sólo si
+$\forall x, y, \in R$ se cumple: $(x + y) \ast (x - y) = x^2 - y^2$\\
+
+$\Longrightarrow)$ $Hipotesis$. R es conmutativo.\\
+
+$P.D$. Bajo la operaicón de la operación del producto se cumple que $\forall x, y \in R$ $(x + y) \ast (x - y) = x^2 - y^2$\\
+
+Sea $x, y, \in R$, entonces\\
+
+\begin{align*}
+    (x + y) \ast (x - y) &= x \ast (x - y) + y \ast (x - y)\\
+    &= xx -xy +yx -yy \textit{ (por conmutatividad)}\\
+    &= xx -xy +xy -yy\\
+    &= xx - yy\\
+    &= x^2 -y^2\\
+\end{align*} 
+
+$\Longleftarrow)$ $Hipotesis$:  $\forall x, y \in R$ se cumple que $(x + y) \ast (x - y) = x^2 - y^2$.\\
+
+$P.D$. $R$ es conmutativo. $i.e$ $\forall x, y \in R$ se cumple $x \ast y = y \ast x$\\
+
+Sea $x, y \in R$\\
+
+Por hipotesis
+\begin{align*}
+    (x + y) \ast (x - y) &= x^2 - y^2\\
+    x \ast (x -y) + y \ast (x -y) &= x^2 - y^2\\
+    x^2 -xy + yx -y^2 &= x^2 - y^2 \textit{ (por cancelación)}\\
+    -xy + yx &= 0\\
+    yx &= xy\\
+\end{align*}
+\vspace{1cm}
 
 %
 % Ejercicio 2
 %
-\textbf{2.} Describe los siguientes conjuntos listando todos sus elementos.
-\begin{enumerate}[label=\alph*)]
-    \item $\{x \in \mathbb{N} \mid x^2 - 3x = 0\}$\\
-    $\{3\}$
+\textbf{2.} Considera la relación $\sim$ usada para definir a $\mathbb{Z}$ y $k \in \mathbb{N}$. Demuestra que:
+    \begin{enumerate}[label=\alph*)]
+        \item $\overline{(k, 0)} = \{(a, b) \in \mathbb{N} \times \mathbb{N} \mid \text{ existe } n \in \mathbb{N} \text{ tal que } a = k + n \text{ y } b = n\}$.\\
 
-    \item $\{n^3 + n^2 \mid n \in \{0, 1, 2, 3, 4\}\}$\\
-    $\{0, 2, 12, 36, 80\}$
+        $\subseteq)$ 
+        $P.D$ existe $(x, y) \in \mathbb{N} \times \mathbb{N}$ y existe un elemento $\ast \in \mathbb{N}$ tal que $x = k + \ast$ y $y =\ast $\\
 
-    \item $\{\frac{1}{n^2 + n}\mid n \text{ es un positivo impar y } n \in \{1, 2, 3, 4, 5, 7\}\}$\\
-    $\{\frac{1}{2}, \frac{1}{12}, \frac{1}{30}, \frac{1}{56}\}$
+        Sea $(x, y) \in \overline{(k, 0)}$, por definición de clase de equivalencia, $(x, y) \sim (k, 0)$, $i.e$:
+        \begin{align*}
+            x + 0 &= y + k\\
+            x &= y + k\\
+        \end{align*}
 
-    \item $\{l \in \mathbb{Z} \mid l = 2n -1 \text{ y } -3 \leq n \leq 9\}$\\
-    $\{-7, -5, -3, -1, 1, 3, 5, 7, 9, 11, 13, 15, 17\}$
-\end{enumerate}
+        Con lo anterior, decimos que $\ast = y$\\
+
+        Por lo tanto $(x, y) \in \{(a, b) \in \mathbb{N} \times \mathbb{N} \mid \text{ existe } n \in \mathbb{N} \text{ tal que } a = k + n \text{ y } b = n\}$\\
+        
+        $\supseteq)$ Sea $(x, y) \in \{(a, b) \in \mathbb{N} \times \mathbb{N} \mid \text{ existe } n \in \mathbb{N} \text{ tal que } a = k + n \text{ y } b = n\}$\\
+
+        Es decir, $(x, y) \in \mathbb{N} \times \mathbb{N}$ y existe un $\ast \in \mathbb{N}$ tal que $x = k + \ast$ y $y = \ast$.\\
+        
+        Proponemos $y = \ast$, enotnces $y = y$ y $x = y + k$\\
+
+        De esta última $x + 0 = y + k$, así $(x, y) \sim (k, 0)$ y por lo tanto $(x, y) \in \overline{(k, 0)}$\\
+
+        \item Usando el inciso previo, escribe por extensión el conjunto $\overline{(15, 5)}$\\
+
+        Digamos 
+        \begin{align*}
+            \overline{(15, 5)} &= \overline{(\ast, 0)}\\
+            (15, 5) &\sim (\ast, 0)\\
+            15 + 0 &= 5 + \ast\\
+            15 + 0 - 5 &= \ast\\
+            10 &= \ast\\
+        \end{align*}
+
+        Con esto tenemos que $\overline{(15, 5)} = \{(10, 0), (11, 1), (12, 2), (13, 3), (14, 4), (15, 5), \dots\}$\\
+    \end{enumerate}
+\vspace{1cm}
 
 %
 % Ejercicio 3
 %
-\textbf{3.} Sea $\mathbb{N}$ el conjunto de los números naturales. Determinar $ A \cup B$, $A \cap B$ y $A^c$ en:
-\begin{enumerate}[label=\alph*)]
-    \item $A = \{n \mid n \text{ es par}\}$ y $B = \{n \mid n < 14\}$\\
-    $A \cup B = \{2, 4, 6, 8, 10, ...\}$\\
-    $A \cap B = \{2, 4, 6, 8, 10, 12\}$\\
-    $A^c = \{1, 3, 5, 7, 9, 11, ...\}$
+\textbf{3.} Muestra los siguientes incisos referentes a orden en $\mathbb{Z}$.
+    \begin{enumerate}[label=\alph*)]
+        \item Sean $a, b \in \mathbb{Z}^+$ tales que $a \leq b$. Usando definiciones, prueba que si $0 < n$, enotnces $a^n \leq b^n$. 
 
-    \item $A = \{n \mid n^2 > 2n - 1\}$, $B = \{n \mid n^2 = 2n + 3\}$\\
-    $A \cup B =  \{2, 3, 4, 5, 6, ...\}$\\
-    $A \cap B = \{9\}$\\
-    $A^c = \{0, 1\}$
-\end{enumerate}
+        \item Si $ a \leq 0$ y $0 < b$, entonces $ab \leq a$
+
+        \item Si $a \leq b$ y $c < d$, muestra con definiciones que $a - d < b - c$.
+
+    \end{enumerate}
+\vspace{1cm}
 
 %
 % Ejercicio 4
 %
-\textbf{4.} Dibuja el diagrama de Venn para el siguiente problema:
-\\
+\textbf{4.} Calcula el cociente y el residuo de los siguientes incisos.
 
-Un grupo de jóvenes fue entrevistado acerca de sus preferencias por diferentes medios
-de transporte: bicicleta, motocicleta y automóvil. Los datos de las encuestas fueron los
-siguientes:
-\begin{itemize}
-    \item Motocilceta solamente 5.
-    \item Motocicleta 38.
-    \item No gustan del automóvil 9.
-    \item Motocicleta y bicicleta pero no automóvil 3.
-    \item Motocicleta y automóvil pero no bicicleta 20.
-    \item No gustan de la bicicleta 72.
-    \item No gustan de las tres cosas 19.
-    \item No gustan de la motocicleta 61.
-\end{itemize}
-Si tomamos al Conjunto $A$ como los que gustan de motocicleta, al $B$ los que gustan de 
-bicicleta y al $C$ los que gustan de automóvil, entonces el diagrama de Venn es:
-\begin{center}
-    \begin{venndiagram3sets}[labelOnlyA={5},labelOnlyB={1},labelOnlyC={47},
-        labelOnlyAB={3},labelOnlyAC={20},labelOnlyBC={13},labelABC={10},
-        labelNotABC={19}]
-    \end{venndiagram3sets}
-\end{center}
+    \begin{enumerate}[label=\alph*)]
 
-Determinar: 
+        \item 175 entre 46.
 
-\begin{enumerate}[label=\alph*)]
-    \item ¿Cuál fue el número de personas entrevistadas?\\
-    118 personas
-    \item ¿A cuántos les gusta la bicicleta solamente?\\
-    una persona
-    \item ¿A cuántos les gusta el automóvil solamente?\\
-    47 personas
-    \item ¿A cuántos les gustan las tres cosas?\\
-    10 personas
-    \item ¿A cuántos les gusta la bicicleta y el automóvil pero no la motocicleta?\\
-    61 personas
-\end{enumerate}
+        \item 20145 entre 1050.
+
+        \item -326 entre 40.
+
+    \end{enumerate}
+\vspace{1cm}
 
 %
 % Ejercicio 5
 %
-\textbf{5.} Sean $A$ y $B$ conjuntos. Prueba que:
-\begin{enumerate}[label=\alph*)]
-    \item $A - B = B^c - A^c$\\
-    Demostraremos por propiedad de conjuntos:
-    \begin{align*}
-        A - B &= A \cap B^c \textit{( por propiedad de diferencia.)}\\
-        &= B^c \cap A \textit{( por conmutatividad de intersección.)}\\
-        &= B^c - A^c \textit{( por propiedad de diferencia.)}
-    \end{align*}
+\textbf{5.} Muestra los siguientes incisos referente a divisibilidad en $\mathbb{Z}$
 
-    \item $B \subseteq A \Longleftrightarrow (A - B) \cup B = A$
+    \begin{enumerate}[label=\alph*)]
+        \item Sean $a$ y $b$ dos enteros. Muestra que $|a| | b$ si y sólo si $a | b$ y $-a |b$.
 
-    $\subseteq)$ Sea $x \in B$ por definición de subconjunto $x \in A$\\
-    como $x \in A$ y $x \in B$ entonces $x \notin A - B$\\
-    como $x \notin A - B$ y $x \in B$ entonces $x \in (A - B) \cup B$\\
-    y por hipotesis, como $B \subseteq A$ entonces $B \cup (A - B) = A$\\
-    \\
-    $\supseteq)$ Sea $x \in (A - B) \cup B$ entonces\\
-    $x \in A - B$ o $x \in B$\\
-    como por nuestra hipotesis $(A - B) \cup B = A$ entonces $x \in A$\\
-    por lo que debe ser $x \in A - B$
-    como $x \notin B$ pero si $x \in (A - B) \cup B$ entonces debe ser $B \subseteq A$\\
-    \\
-    $\therefore B \subseteq A \Longleftrightarrow (A - B) \cup B = A$
-\end{enumerate}
+        \item Muestra usando definiciones que si $a | b$ y $a | b + c$, entonces $a | c$.
+
+        \item Muestra usando definiciones que si $a , b \in \mathbb{Z}$ y $0 \leq n$, entonces $a - b | a^n - b^n$.
+           \end{enumerate}
+
+\vspace{1cm}
 
 %
-% Ejercicio 6 
+% Ejercicio 6
 %
-\textbf{6.} Sean $A$, $B$ y $C$ tres conjuntos cualesquiera. Demuestra que:
-\begin{enumerate}[label=\alph*)]
-    \item $(A - B) - C = A - (B \cup C)$\\
-    Demostraremos por propiedades de conjuntos:
-    \begin{align*}
-        (A - B) - C &= (A \cap B^c) - C\\
-        &= (A \cap B^c) \cap C^c \textit{ (por propiedad de diferencia.)}\\
-        &= A \cap (B^c \cap C^c) \textit{ (por leyes De Morgan)}\\
-        &= A \cap (B \cup C)^c \textit{ (por propiedad de diferencia.)}\\
-        &= A - (B \cup C)
-    \end{align*}
+\textbf{6.} Muestra mediante inducción matemática lo siguiente. Si $a | b_1, a | b_2, \dots, a | b_n$, entonces $a | b_1 + \dots + a | b_n$.\\
 
-    \item Si $A \subseteq B \Longrightarrow (A - C) \subseteq (B - C)$\\
-
-    \textbf{Hipótesis}. $A \subseteq B$, entonces $x \in A \Longrightarrow x \in B$\\
-    
-    $PD$. $(A - C) \subseteq (B - C)$\\
-    Sea $x \in A - C \Longrightarrow x \in A \land x \notin C$\\
-    por hipotesis sabemos que $x \in B$ y por el paso anterior $x \notin C$\\
-    así, $x \in B - C$\\
-    de nuevo por nuestra hipótesis $A \subseteq B \Longrightarrow (A - C) \subseteq (B - C)$\\
-    $\therefore$ si $A \subseteq B$ entonces $(A - C) \subseteq (B - C)$
-
-\end{enumerate}
+Usando lo anterior, muestra que si $a | b_1, a | b_2, \dots, a | b_n$, entonces para toda $c_1, \dots, c_n \in \mathbb{Z}$ se cumple que $a | c_1b_1 + \dots + c_nb_n$
+\vspace{1cm}
 
 %
-% Ejercicio 7
+% ejercicio 7
 %
-\textbf{7.} Sean $A$ y $B$ dos conjuntos. Definimos $A \bigtriangleup B = (A - B) \cup (B - A)$. Demuestra que:
-\begin{enumerate}[label=\alph*)]
-    \item $A \cap (B \bigtriangleup C) = (A \cap B) \bigtriangleup (A \cap C)$\\
-    $\subseteq)$\\
-    $P.D$. $A \cap (B \bigtriangleup C) \subseteq (A \cap B) \bigtriangleup (A \cap C)$
-    sea $x \in A \cap (B \bigtriangleup C) \Longrightarrow x \in A \land x \in (B \bigtriangleup C)$\\
-    por definición de $\bigtriangleup$ tenemos que $x \in A$ y  $x \in (B - C) \cup (C - B)$\\
-    ahora, si $x \in (B - C) \cup (C - B) \Longrightarrow x \in B - C \lor x \in C - B$\\
-    \\
-    como tenemos una unión, entonces tenemos dos casos:
-    \[\text{i) } x \in B - C \Longrightarrow x \in B \land x \notin C\]
-    \[\text{ii) } x \in C - B \Longrightarrow x \in C \land x \notin B\]
-    Si fuera i), entonces $x \in A$ y $x \in B$ y $x \notin C$\\
-    $\Longrightarrow x \in A \cap B$ y $x \notin A \cap C$\\
-    entonces $x \in (A \cap B) - (A \cap C)$\\
-    con ello $x \in (A \cap B) \bigtriangleup (A \cap C)$\\
-    \\
-    Si fuera ii), entonces $x \in A$ y $x \in C$ y $x \notin B$\\
-    $\Longrightarrow x \in A \cap C$ y $x \notin A \cap B$\\
-    entonces $x \in (A \cap C) - (A \cap B)$\\
-    con ello, por definición de $\bigtriangleup$, tenemos $x \in (A \cap B) \bigtriangleup (A \cap C)$\\
-    \\
-    Como en ambos casos $x \in (A \cap B) \bigtriangleup (A \cap C)$
-    entonces $A \cap (B \bigtriangleup C) \subseteq (A \cap B) \bigtriangleup (A \cap C)$\\
-    \\
-    $\supseteq)$\\
-    $P.D$. $(A \cap B) \bigtriangleup (A \cap C) \subseteq A \cap (B \bigtriangleup C)$
+\textbf{7.} Sean $a$ y $b$ dos enteros. Muestra que si $13 | 5a + 8b$, entonces $13|31a - 5b$\\
 
-
-    \item Sean $A = \{a, b, c, d\}$, $B = \{3, 5, 7, c\}$ y $C = \{a, 1, 3, c\}$, encuentra:
-    \begin{enumerate}
-        \item $A \bigtriangleup B$\\
-        $A \bigtriangleup B = (A - B) \cup (B - A) = \{a, b, d, 3, 5, 7\}$\\
-
-        \item $A \cap (B \bigtriangleup C)$\\
-        $B \bigtriangleup C = \{a, 1, 5, 7\}$\\
-        $A \cap (B \bigtriangleup C) = \{a\}$\\
-
-        \item $ B \bigtriangleup A$\\
-        $B \bigtriangleup A = (B - A) \cup (A - B) = \{a, b, d, 3, 5, 7\}$
-    \end{enumerate}
-\end{enumerate}
+\vspace{1cm}
 
 %
 % Ejercicio 8
 %
-\textbf{8.} Sean $A$, $B$, $C \subseteq \mathcal{U}$:
-\begin{enumerate}[label=\alph*)]
-    \item Expresa $(A - B)^c$ en terminos de $\cup$ y -:\\
-    $(\mathcal{U} - A) \cup B$
+\textbf{8.} Sean $a$ y $b$ dos enteros no nulos y $d \in \mathbb{Z}^+$ tal que $d | a$ y $d | b$. Muestra que $\frac{ab}{d} = \frac{ba}{d}$.
 
-    \item Demuestra que: $A - (B \cap C) = (A - B) \cup (A - C)$\\
-    Demostraremos por propiedades de conjuntos:
-    \begin{align*}
-        A - (B \cap C) &= A \cap (B \cap C)^c \textit{ (por propiedad de la diferencia)}\\
-        &= A \cap (B^c \cup C^c) \textit{ (por leyes De Morgan)}\\
-        &= A - (B^c \cup C^c)^c \textit{ (por propiedad de diferencia.)}\\
-        &= A - (B \cap C) \textit{ (por leyes De Morgan)}\\
-        &= (A - B) \cup (A - C) \textit{ (por leyes De Morgan)}
-    \end{align*}
-\end{enumerate}
+\vspace{1cm}
 
-% 
+%
 % Ejercicio 9
 %
-\textbf{9.} Da un contraejemplo para probar la falsedad de los siguientes enunciados:
-
+\textbf{9.} Calcula los siguientes incisos.
 \begin{enumerate}[label=\alph*)]
-    \item $A \cap (B \cup C) = A \cap C \Longrightarrow A \cap C = \varnothing$\\
+    \item Calcula 723 en base 7.
+        \begin{align*}    
+            723 &= 103 \ast 7 + 2\\
+            103& = 14 \ast 7 + 5\\
+            14 &= 2 \ast 7 + 0\\
+            2 &= 0 \ast 7 + 2\\
+        \end{align*}
 
-    Proponemos los conjuntos:
-    \[A = \{1, 2, 3, 4\}, B = \{7, 8, 9\} \text{ y } C = \{2, 5, 6, 7\}\]
-    Primero determinaremos $B \cup C$, que es el conjunto $\{2, 5, 6, 7, 8, 9\}$. Ahora, $A \cap (B \cup C) = \{2\}$, notemos que:
-    \[A \cap C = \{2\} \neq \varnothing\]
-    cumpliendo la igualdad $A \cap (B \cup C) = A \cap C$ con $A \cap C \neq \varnothing$. Por lo tanto hemos exibido un elemento 
-    que no cumple la proposición.
+        Con ello tenemos que $723$ en base 7 es: $(2052)_7$.
 
-    \item $A - (B - C) = (A - B) - C$\\
+    \item Calcula 27 en base 2.
+        \begin{align*}
+            27 &= 13 \ast 2 + 1\\
+            13 &= 6 \ast 2 + 1\\
+            6 &= 3 \ast 2 + 0\\
+            3 &= 1 \ast 2 + 1\\
+            1 &= 0 \ast 2 + 1\\
+        \end{align*}
 
-    Proponemos los conjuntos:
-    \[A = \{3, 4, 5, 9, 10, 11, 12\}, B = \{3, 4, 5, 6, a, b, c\} \text{ y } C = \{5, 6, 7, 8, 9\}\]
-    Primero realizamos el conjunto $B - C$, que resulta ser $\{3, 4, a, b, c\}$. con el podemos realizar 
-    el conjunto $ A - (B - C) = \{5, 9, 10, 11, 12\}$.\\
+        Con ello tenemos que $27$ en base 2 es: $(11011)_2$.\\
 
-    Ahora podemos realizar el conjunto $A - B = \{9, 10, 11, 12\}$, de aquí podemos formar el 
-    conjunto $(A - B) - C = \{10, 11, 12\}$\\
+    \item Calcula $(1076)_8 + (2076)_8$.\\
 
-    Como es evidente $A - (B - C) \neq (A - B) - C$, los conjuntos propuestos prueban la falsedad de la proposición.
+        Primero vamos a pasar a base 10 ambas cantidades.\\
+
+        $(1076)_8$ a base 10.\\
+        $8^0 \ast 6 + 8^1 \ast 7 + 8^2 \ast 0 + 8^3 \ast 1 = 6 + 56 + 0 + 512 = 574$\\
+
+        $(2076)_8$ a base 10.\\
+        $8^0 \ast 6 + 8^1 \ast 7 + 8^2 \ast 0 + 8^3 \ast 2 = 6 + 56 + 0 + 1024 = 1086$\\
+
+        $574 + 1086 = 1660$\\
+
+        Podemos entonces pasar 1660 a base 8\\
+        \begin{align*}
+            1660 &= 207 \ast 8 + 4\\
+            207 &= 25 \ast 8 + 7\\
+            25 &= 3 \ast 8 + 1\\
+            3 &= 0 \ast 8 + 3\\
+        \end{align*}
+
+        Podemos entonces decir que la suma de $(1076)_8 + (2076)_8 = (3174)_8$.
 \end{enumerate}
 
-%
-% ejercicio 10
-%
-\textbf{10.} Sean $A$ y $B$ dos conjuntos. Demuestra que:
-
-\begin{enumerate}[label=\alph*)]
-    \item $A \subset B \Longleftrightarrow \mathcal{P}(A) \subset \mathcal{P}(B)$\\
-
-    \textit{Hipotesis.} $A \subset B$, enotnces $\forall x \in A \Longrightarrow x \in B$\\
-
-    Si tuvieramos $x \in A$, por nuestra hipotesis será $x \in B$.\\
-
-    Por la definición de $\mathcal{P}(A)$ tenemos que $\mathcal{P}(A) = \{x \mid x \subseteq A\}$, y como sabemos $A \subset B$ entonces
-    todo subconjunto de de $A$ es tambien subconjunto de $B$, así:
-    \[\mathcal{P}(A) \subset \mathcal{P}(B)\]
-
-    \item Si $A \cap B = \varnothing \Longrightarrow \mathcal{P}(A - B) = [\mathcal{P}(A) - \mathcal{P}(B)] \cup \{\varnothing\}$
-
-    Si $A \cap B = \varnothing$ entonces $\forall x \in A \Longrightarrow x \notin B$ y $\forall z \in B \Longrightarrow z \notin A$\\
-
-    $\subseteq)$\\
-    $P.D$ $\mathcal{P}(A - B) \subseteq [\mathcal{P}(A) - \mathcal{P}(B)] \cup \{\varnothing\}$\\
-    
-    Como $A \cap B = \varnothing$, por la definición de \textit{diferencia de conjuntos} sabemos que se cumple $A - B = A$. De lo anterior 
-    afirmamos que $ \mathcal{P}(A - B) = \mathcal{P}(A)$\\
-
-    Como $A$ y $B$ son conjuntos disjuntos, entonces sus potencias $\mathcal{P}(A)$ y $\mathcal{P}(B)$ sólo comparten un 
-    elemento que es el conjunto vacío $\varnothing$. Así:
-    \[\mathcal{P}(A) - \mathcal{P}(B) = \mathcal{P}(A) - \{\varnothing\}\]
-    De lo anterior tenemos $\mathcal{P}(A - B) \subseteq [\mathcal{P}(A) - \mathcal{P}(B)] \cup \{\varnothing\}$\\
-
-    $\supseteq)$\\
-    $P.D$ $[\mathcal{P}(A) - \mathcal{P}(B)] \cup \{\varnothing\} \subseteq \mathcal{P}(A - B)$\\
-
-    Como sabemos por hipotesis que $A \cap B = \varnothing$ podemos deducir que $A - B = A$.\\
-
-    De lo anteriro podemos decir:
-    \[\mathcal{P}(A) - \mathcal{P}(B) = \mathcal{P}(A) - \{\varnothing\}\]
-    \[(\mathcal{P}(A) - \{\varnothing\}) \cup {\varnothing} = \mathcal{P}(A)\]
-
-    De nuevo por hipótesis sabemos que $A - B = A$, entonces $\mathcal{P}(A) = \mathcal{P}(A - B)$\\
-
-    Así hemos demostrado que $[\mathcal{P}(A) - \mathcal{P}(B)] \cup \{\varnothing\} \subseteq \mathcal{P}(A - B)$\\
-
-    $\therefore$ si $A \cap B = \varnothing \Longrightarrow \mathcal{P}(A - B) = [\mathcal{P}(A) - \mathcal{P}(B)] \cup \{\varnothing\}$
-
-\end{enumerate}
+\vspace{1cm}
 
 %
-% Ejercicio 13
+% Ejercicio 10
 %
-\textbf{13.} Determina cuáles de las siguientes oraciones son proposiciones:
+\textbf{10.} Un profesor de matemáticas califica los exámenes de la siguiente manera: el primer problema vale un
+punto, el segundo 2, el tercero 4, el cuarto 8 y así sucesivamente. Un problema, o está bien o está mal, no hay
+término medio. Un alumno aprueba si al menos la mitad de todos los problemas están bien. Un estudiante
+obtuvo en el examen de junio, que constaba de 10 problemas, 581 puntos. Determina qué problemas hizo bien
+y si aprobó el examen o no.\\
 
-\begin{enumerate}[label=\alph*)]
-    \item Algunos números enteros son negativos.\\
-    Es una proposición con valor de verdad $V$.
-    \item El número 15 es un número par.\\
-    Es una proposición con valor de verdad $F$.
-    \item ¿Qué hora es?\\
-    No es una proposición pues no se puede determinar veracidad.
-    \item En los números enteros, $11 + 6 \neq 12$\\
-    Si es proposición con valor de verdad $V$.
-    \item La tierra es casi una esfera.\\
-    Si es una proposición con valor de verdad $V$.
-\end{enumerate}
+Primero, tengamos el listado de puntajes a mano: $1, 2, 4, 8, 16, 32, 64, 128, 256, 512$.\\
 
-%
-% Ejercicio 14
-%
-\textbf{14.} Si $P$ y $R$ representan proposiciones verdaderas y $Q$ y $S$ representan proposiciones falsas,
-encuentra el valor de verdad de las proposiciones compuestas dadas a continuación:
+Podemos ver que estamos en base 2, por lo que si trasladamos 581 a base 2 podriamos ver los problemas correctos.
+\begin{align*}
+    581 &= 290 \ast 2 + 1\\
+    290 &= 145 \ast 2 + 0\\
+    145 &= 72 \ast 2 + 1\\
+    72 &= 36 \ast 2 + 0\\
+    36 &= 18 \ast 2 + 0\\
+    18 &= 9 \ast 2 + 0\\
+    9 &= 4 \ast 2 + 1\\
+    4 &= 2 \ast 2 + 0\\
+    2 &= 1 \ast 2 + 0\\
+    1 &= 0 \ast 2 + 1\\
+\end{align*}
 
-\begin{enumerate}[label=\alph*)]
-    \item $\neg P \land R$\\
-    $F \land V = F$
-
-    \item $\neg [\neg P \land (\neg Q \land P)]$\\
-    $\neg[F \land (V \land V)] = \neg[F \land V] = \neg F = V$
-
-    \item $(P \land R) \lor \neg Q$\\
-    $(V \land V) \lor V = V \lor V = V$
-
-    \item $P \Longrightarrow (Q \Longrightarrow R)$\\
-    $V \Longrightarrow (F \Longrightarrow V) = V \Longrightarrow V = V$
-
-    \item $[(P \land \neg Q) \Longrightarrow (Q \land R)] \Longrightarrow (S \lor \neg Q)$\\
-    $[(V \land V) \Longrightarrow (F \land V)] \Longrightarrow (F \lor V) = [V \Longrightarrow F] \Longrightarrow V = F \Longrightarrow V = V$
-\end{enumerate}
-
-%
-% Ejercicio 15
-%
-\textbf{15.} Responde:
-
-\begin{enumerate}[label=\alph*)]
-    \item Si la proposición $Q$ es verdadera, determine todas las asiganciones de valores de
-    verdad para las proposiciones $P$, $R$ y $S$ para la proposición:
-    \[\{Q \Longrightarrow [(\neg P \lor R) \land (\neg S)]\} \land \{\neg S \Longrightarrow (\neg R \land Q)\}\]
-    
-    Vamos a realizar una sola tabla para ahorra espacio:
-    \begin{table}[h!]
-        \centering
-        \begin{tabular}{|c|c|c|c|||c|||c|c|c||c||c||||c||||c|||c|||c|c|c|}
-            \hline
-            $Q$ & $P$ & $R$ & $S$ & $\Longrightarrow$ & $\neg P$ & $\lor$ & $R$ & $\land$ & $\neg S$ & $\land$ & $\neg S$ & $\Longrightarrow$ & $\neg R$ & $\land$ & $Q$\\
-            \hline
-            V & V & V & V & F & F & V & V & F & F & F & F & V & F & F & V\\
-            V & V & V & F & V & F & V & V & V & V & F & V & F & F & F & V\\
-            V & V & F & V & F & F & F & F & F & F & F & F & V & V & V & V\\
-            V & V & F & F & F & F & F & F & F & V & F & V & V & V & V & V\\
-            V & F & V & V & F & V & V & V & F & F & F & F & V & F & F & V\\
-            V & F & V & F & V & V & V & V & V & V & F & V & F & F & F & V\\
-            V & F & F & V & F & V & V & F & F & F & F & F & V & V & V & V\\
-            V & F & F & F & V & V & V & F & V & V & V & V & V & V & V & V\\
-            F & V & V & V & V & F & V & V & F & F & V & F & V & F & F & F\\
-            F & V & V & F & V & F & V & V & V & V & F & V & F & F & F & F\\
-            F & V & F & V & V & F & F & F & F & F & V & F & V & V & F & F\\
-            F & V & F & F & V & F & F & F & F & V & F & V & F & V & F & F\\
-            F & F & V & V & V & V & V & V & F & F & V & F & V & F & F & F\\
-            F & F & V & F & V & V & V & V & V & V & F & V & F & F & F & F\\
-            F & F & F & V & V & V & V & F & F & F & V & F & V & V & F & F\\
-            F & F & F & F & V & V & V & F & V & V & F & V & F & V & F & F\\
-            \hline           
-        \end{tabular}
-        \caption{Tabla de valor de las variables}
-    \end{table}
-    
-\end{enumerate}
-
+De lo anterior podemos ver que 581 es igual a $(1001000101)_2$. Así vemos que se obtuvieron bien el problema 10, 7, 3 y 1, que son 
+$512 + 64 + 4 + 1 = 581$. Por lo que, al tener 4 problemas correctos, el alumno no aprobó el examen.
 \end{document}

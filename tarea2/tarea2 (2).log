@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.21)  27 FEB 2025 22:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.21)  4 APR 2025 23:13
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**participacion1.tex
-(./participacion1.tex
+**"tarea2 (2).tex"
+(./tarea2 (2).tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -585,6 +584,19 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen281
 \Gm@dimlist=\toks44
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip69
+\f@nch@O@elh=\skip70
+\f@nch@O@erh=\skip71
+\f@nch@O@olh=\skip72
+\f@nch@O@orh=\skip73
+\f@nch@O@elf=\skip74
+\f@nch@O@erf=\skip75
+\f@nch@O@olf=\skip76
+\f@nch@O@orf=\skip77
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty
@@ -606,23 +618,23 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count318
 \l__pdf_internal_box=\box81
 )
-(./participacion1.aux)
-\openout1 = `participacion1.aux'.
+(./tarea2 (2).aux)
+\openout1 = `"tarea2 (2).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -685,12 +697,12 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -699,182 +711,392 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Escudo.png, id=4, 685.56125pt x 770.88pt>
 File: Escudo.png Graphic file (type png)
 <use Escudo.png>
-Package pdftex.def Info: Escudo.png  used on input line 28.
-(pdftex.def)             Requested size: 105.90536pt x 119.08524pt.
+Package pdftex.def Info: Escudo.png  used on input line 34.
+(pdftex.def)             Requested size: 94.75519pt x 106.54623pt.
 <logo_ciencias.png, id=6, 674.52pt x 770.88pt>
 File: logo_ciencias.png Graphic file (type png)
 <use logo_ciencias.png>
-Package pdftex.def Info: logo_ciencias.png  used on input line 30.
+Package pdftex.def Info: logo_ciencias.png  used on input line 36.
 (pdftex.def)             Requested size: 111.4762pt x 127.40144pt.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Escud
 o.png> <./logo_ciencias.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--247
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
 
  []
 
-[5] (./participacion1.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--186
+
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 214--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--256
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--274
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 294--298
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--330
+
+ []
+
+[6{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 360--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--453
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 519--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+[11] (./tarea2 (2).aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 20067 strings out of 474116
- 401085 string characters out of 5743682
- 1940187 words of memory out of 5000000
- 42127 multiletter control sequences out of 15000+600000
- 567274 words of font info for 71 fonts, out of 8000000 for 9000
+ 20306 strings out of 474116
+ 404863 string characters out of 5743682
+ 1943187 words of memory out of 5000000
+ 42358 multiletter control sequences out of 15000+600000
+ 568539 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,93p,419b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,93p,437b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on participacion1.pdf (5 pages, 281883 bytes).
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "tarea2 (2).pdf" (11 pages, 353055 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
